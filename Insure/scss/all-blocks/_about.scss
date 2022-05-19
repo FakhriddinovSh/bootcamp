@@ -1,0 +1,87 @@
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 350px;
+    &__contents__title{
+        position: relative;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 64px;
+        letter-spacing: -1px;
+        color: #2C2830;
+        &::after{
+            position: absolute;
+            content: "";
+            background: url(../Images/about-after.svg) no-repeat;
+            width: 100%;
+            height: 2px;
+            top: -80px;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    &__cards{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__cards__items{
+        position: relative;
+        width: 350px;
+        height: 300px;
+        padding-top: 90px;
+        &::after{
+            position: absolute;
+            content: "";
+            background: url(../../Images/about-cards-after.svg) no-repeat;
+            width: 100px;
+            height: 100px;
+            top: 0;
+        }
+    }
+    &__cards__items:nth-child(2){
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            background: url(../../Images/about-cards-after__2.svg) no-repeat;
+            width: 100px;
+            height: 100px;
+            top: 0;
+        }
+    }
+    &__cards__items:nth-child(3){
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            background: url(../../Images/about-cards-after__3.svg) no-repeat;
+            width: 100px;
+            height: 100px;
+            top: 0;
+        }
+    }
+    &__cards__items > h4{
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 38px;
+        letter-spacing: -0.388889px;
+        color: #2C2830;
+    }
+    &__cards__items > p{
+        font-family: 'Karla';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #837D88;
+    }
+    &__cards-2{
+        margin: 0 50px;
+    }
+}
